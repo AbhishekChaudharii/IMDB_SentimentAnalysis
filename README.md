@@ -39,12 +39,21 @@ curl -X POST "http://127.0.0.1:5002/predict" \
      -H "Content-Type: application/json" \
      -d '{"review_text": "This movie was amazing!"}'
 ```
+
+#### OR
+Edit the review_text in `test_flask.py` and run it
+```bash
+python test_flask.py
+```
+
+
+
 #### Example Response
 ```json
 {
     "sentiment_prediction": "positive"
 }
-```
+``` 
 
 ## Notes
 - Ensure `sentiment_model.pkl` and `vectorizer.pkl` exist before running the API. If not, train the model first.
