@@ -1,0 +1,4 @@
+assignment-1.ipynb
+*.db
+*.pkl
+__pycache__/
